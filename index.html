@@ -6,7 +6,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Sistema web para gerencia de um dos eventos gastronômicos mais esperados de Belém!">
+    <meta name="description"
+          content="Sistema web para gerencia de um dos eventos gastronômicos mais esperados de Belém!">
     <meta author="P. Victor Lobato Sarmento">
     <link rel="icon" href="favicon.ico">
     <title>Churrasco Manager</title>
@@ -307,7 +308,8 @@
                      style="visibility: visible; animation-name: fadeIn; animation-delay: 0.6s;">
 
                     <!--Card image-->
-                    <img class="img-fluid" src="./img/adult-african-descent-american-1345085-min.jpg" alt="Card image cap">
+                    <img class="img-fluid" src="./img/adult-african-descent-american-1345085-min.jpg"
+                         alt="Card image cap">
 
                     <!--Card content-->
                     <div class="card-body">
@@ -405,6 +407,9 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="./js/mdb.min.js"></script>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-93649004-4"></script>
+
 <script>
     // Scrolls to the selected menu item on the page
     $(function () {
@@ -422,7 +427,17 @@
         });
     });
 
-    // ?
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-93649004-4');
+
+    // wow animations
     new WOW().init();
 </script>
 
